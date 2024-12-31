@@ -1,0 +1,124 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Background Video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 2;
+}
+
+#logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(left, #ff416c, #ff4b2b); /* Gradient color */
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Standard gradient */
+    -webkit-background-clip: text; /* Vendor prefix for older browsers */
+    background-clip: text; /* Standard property for compatibility */
+    color: transparent;
+}
+
+/* Search Bar */
+.search-container {
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.search-bar {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 35px;
+    padding: 15px 30px;
+    width: 500px;
+}
+
+#search-input {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 450px;
+    font-size: 18px;
+}
+
+#search-button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#typing-animation {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Movies Section */
+.movies-container {
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.movie-box {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.movie-box img {
+    width: 100%;
+    border-bottom: 2px solid red;
+}
+
+.movie-box h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Hover Effect for Movies */
+.movie-box:hover {
+    transform: scale(1.1); /* Enlarge the box */
+    background: rgba(0, 0, 0, 0.9); /* Darker background */
+    cursor: pointer; /* Show pointer cursor */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demoreco</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="/static/avatar.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">DEMORECO</div>
+        <!-- <div id="mode-toggle">
+            <i id="dark-mode" class="fas fa-moon" title="Dark Mode"></i>
+            <i id="light-mode" class="fas fa-sun" title="Light Mode" style="display: none;"></i>
+        </div> -->
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for a movie...">
+            <button id="search-button" title="Search"><i class="fas fa-search"></i></button>
+        </div>
+        <p id="typing-animation"></p>
+    </div>
+
+    <!-- Movies Section -->
+    <div class="movies-container">
+        <h2>Popular Movies</h2>
+        <div class="movies-grid" id="movies-grid">
+            <!-- Movie boxes will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
